@@ -12,10 +12,19 @@ p {
   margin: 0;
 }
 
+.wrapp {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .cards {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
   gap: 12px;
 }
 
@@ -118,4 +127,11 @@ p {
 }
 .group__percentage[data-trend="down"] {
   color: #DF1B41;
+}
+
+/*---- Simple Responsive ----*/
+@media (max-width: 960px) {
+  .cards {
+    flex-direction: column;
+  }
 }
