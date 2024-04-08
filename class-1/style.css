@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #0C0D11;
+}
+
+p {
+  margin: 0;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.card {
+  width: 100%;
+  border: 1px solid #dde1e5;
+  border-radius:  16px;
+  max-width: 400px;
+  min-width: 300px;
+}
+
+.card__header {
+  padding: 12px 12px 0 12px;
+}
+
+.icon--border {
+  border: 1px solid #dde1e5;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon svg {
+  width: 50%;
+  height: 50%;
+}
+
+.icon--blue svg {
+  fill: #33CFFF;
+}
+
+.card__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 12px 12px;
+}
+
+.group__label {
+  display: inline-block;
+  margin-bottom: 4px;
+  color: #656E7F;
+}
+
+.group__value {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+.icon--green svg {
+  fill: #A5ACBB;
+}
+
+.card__footer {
+  padding: 12px 12px;
+  background: #F8F9FB;
+  border-top: 1px solid #dde1e5;
+  border-radius: 0 0 14px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.group__percentage {
+  display: flex;
+  font-weight: 700;
+  align-items: center;
+  gap: 6px;
+}
+
+.percentage__icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.group__percentage[data-trend="up"] {
+  color: #42C3A9;
+}
+.group__percentage[data-trend="down"] {
+  color: #DF1B41;
+}
+
+.percentage__period {
+  color: #6F7587;
+}
