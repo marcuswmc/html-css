@@ -27,6 +27,7 @@ p {
   min-width: 300px;
 }
 
+/*---- CARD HEADER ----*/
 .card__header {
   padding: 12px 12px 0 12px;
 }
@@ -54,6 +55,10 @@ p {
   fill: #33CFFF;
 }
 
+/*---- END CARD HEADER ----*/
+
+/*---- CARD BODY ----*/
+
 .card__body {
   display: flex;
   justify-content: space-between;
@@ -76,7 +81,9 @@ p {
 .icon--green svg {
   fill: #A5ACBB;
 }
+/*---- END CARD BODY ----*/
 
+/*---- CARD FOOTER ----*/
 .card__footer {
   padding: 12px 12px;
   background: #F8F9FB;
@@ -99,13 +106,16 @@ p {
   height: 16px;
 }
 
+.percentage__period {
+  color: #6F7587;
+}
+/*---- END CARD FOOTER ----*/
+
+/*---- CARD DATA-TREND ----*/
+
 .group__percentage[data-trend="up"] {
   color: #42C3A9;
 }
 .group__percentage[data-trend="down"] {
   color: #DF1B41;
-}
-
-.percentage__period {
-  color: #6F7587;
 }
