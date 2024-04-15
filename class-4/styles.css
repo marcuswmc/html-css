@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  background: #0f0f0f;
+}
+
+a {
+  text-decoration: none;
+  color: #707070;
+  background-color: transparent;
+  font-size: 14px;
+}
+
+a:hover {
+  color: #fff;
+}
+
+.active {
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh; 
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  background: #171717;
+  border: 1px solid #1f1f1f;
+  border-radius: 16px;
+  min-width: 900px;
+  width: auto;
+}
+
+.table--navigate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px;
+  background: transparent;
+  height: 22px;
+}
+
+.main--navigate {
+  display: flex;
+  gap: 22px;
+  background: transparent;
+}
+
+.search--input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 0%;
+  padding: 8px;
+  border-radius: 16px;
+  background: #1f1f1f;
+  color: #707070;
+}
+
+.search--input svg {
+  width: 14px;
+  background: transparent;
+}
+
+.search--input input {
+  background: transparent;
+  outline: none;
+  border: none;
+  color: white;
+
+  font-size: 14px;
+}
+
+.table--container {
+  border-top: 1px solid #1f1f1f;
+  padding: 16px;
+}
+
+table {
+  width: 100%;
+  padding: 16px;
+  border-collapse: collapse;
+}
+
+tr:hover {
+  background: #1f1f1f;
+}
+
+th, td {
+  padding: 12px;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left;
+}
+
+th {
+  font-size: 12px;
+  font-weight: 500;
+  color: #707070;
+  background: #1f1f1f;
+}
+
+
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  opacity: 0.3;
+}
+
+.employee--avatar {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+td img {
+border-radius: 50px;
+}
+
+td {
+  color: #fff;
+  text-align: left;
+}
+
+
+.button--status {
+border-radius: 4px;
+padding: 4px 8px;
+border: none;
+}
+
+[data-status="pending"] {
+  background: #d95f2b15;
+  color: #d95f2b;
+}
+
+[data-status="approved"] {
+  background: #51b47f15;
+  color: #51b480;
+}
+
+[data-status="declined"] {
+  background: #df494915;
+  color: #df4949;
+}
