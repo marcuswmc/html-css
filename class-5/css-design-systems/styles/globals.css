@@ -1,0 +1,147 @@
+:root {
+    --black: #181818;
+    --neutral: #fafafa;
+    --neutral-gray: #a3a3a3;
+    --primary: #0070D2;
+    --primary-10: #005FB2;
+    --red: #C23934;
+    --red-10: #A61A14;
+    --green: #4BCA81;
+    --green-10: #04844B;
+}
+
+html,
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background: #fafafa;
+}
+
+.wrapper__content {
+    background: white;
+    border: 1px solid gainsboro;
+    border-radius: 8px;
+    padding: 32px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 32px 0;
+    gap: 24px;
+}
+
+.avatar img[data-size="lg"]{
+    width: 48px;
+    border-radius: 12px;
+}
+.avatar img[data-size="md"]{
+    width: 32px;
+    border-radius: 8px;
+}
+.avatar img[data-size="sm"]{
+    width: 24px;
+    border-radius: 4px;
+}
+
+
+button {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 1px 16px;
+    background: var(--primary);
+    border: none;
+    border-radius: 4px;
+    color: white;
+}
+
+.feather-zap {
+    width: 16px;
+    height: 16px;
+    fill: white;
+}
+
+button:hover {
+ background: var(--primary-10);
+}
+
+button:focus {
+box-shadow: 0px 0px 3px 0px #0070D2;
+}
+
+button:disabled{
+background: #C9C7C5;
+}
+
+button[data-state="destructive"] {
+    background: var(--red);
+}
+
+button[data-state="destructive"]:hover {
+    background: var(--red-10);
+}
+
+button[data-state="success"] {
+    background: var(--green);
+}
+
+button[data-state="success"]:hover {
+    background: var(--green-10);
+}
+
+.input--wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input--wrapper label[data-show-label="false"]{
+    display: none;
+}
+
+.input--form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #FFFFFF;
+    padding: 8px 12px;
+    border: 1px solid #DDDBDA;
+    border-radius: 4px;
+}
+
+.input--form:has([data-error="false"]):focus-within {
+    border: 1px solid #1589EE;
+    box-shadow: 0px 0px 3px 0px #0070D2;
+}
+
+.input--form:has([data-error="true"]) {
+    border: 1px solid red;
+}
+
+.input--form:has(:disabled) {
+    box-shadow: none;
+    background: #ECEBEA;
+}
+
+.feather-search {
+    stroke: #B0ADAB;
+    stroke-width: 3;
+    width: 16px;
+    height: 16px;
+}
+
+.input--form input {
+    border: none;
+    background: transparent;
+    line-height: 20px;
+    outline: none;    
+}
+
+
+
+
+

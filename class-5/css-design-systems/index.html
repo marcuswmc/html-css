@@ -1,0 +1,66 @@
+<!-- 
+	Documentation: 
+	https://www.figma.com/file/udWyes5Zfj14qQDmD6oUzL/Edit---Design-Systems?type=design&node-id=2%3A783&mode=dev&t=RszSJCDWvtv4ecS1-1
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Design System</title>
+	<link rel="stylesheet" href="styles/globals.css" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<h3 class="wrapper__title">Avatars</h3>
+		<div class="wrapper__content">
+			<div class="flex">
+				<!-- Conteúdo aqui -->
+				<div class="avatar">
+					<img src="/assets/user.jpeg" data-size="lg" alt="User Avatar"> <!-- data-size: lg, md, sm -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="wrapper">
+		<h3 class="wrapper__title">Buttons</h3>
+		<div class="wrapper__content">
+			<div class="flex">
+				<!-- Conteúdo aqui -->
+				<button class="brand--button" data-state="success" disabled> <!-- data-states: destructive or success -->
+					<i data-feather="zap"></i>
+					Label
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="wrapper">
+		<h3 class="wrapper__title">Inputs</h3>
+		<div class="wrapper__content">
+			<div class="flex">
+				<!-- Conteúdo aqui -->
+				<form action="">
+					<div class="input--wrapper">
+						<label for="field" aria-label="Field Label" data-show-label="true"> <!-- data-show-label: true or false -->
+							Field Label
+						</label>
+						<div class="input--form">
+							<i data-feather="search"></i>
+							<input type="text" id="field" placeholder="Placeholder" data-error="false"> <!-- data-error: true or false -->
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+<script>
+	feather.replace();
+</script>
+
+</html>
