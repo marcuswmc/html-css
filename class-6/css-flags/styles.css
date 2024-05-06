@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    font-family: 'Inter', sans-serif;
+    --page-background: #222;
+    --flag-width: 300px;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 32px 16px;
+    background: var(--page-background);
+    color: white;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.flag {
+    width: var(--flag-width);
+    aspect-ratio: 4/3;
+    background: gainsboro;
+    position: relative;
+
+}
+
+.flag::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(120deg, rgba(240, 240, 240, 0.271), rgba(92, 13, 13, 0.162));
+}
+
+.flag_title {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Italy */
+.flag--italy {
+display: flex;
+}
+.italy--green {
+    background: green;
+    height: 100%;
+    width: calc(100% / 3);
+}
+
+.italy--white {
+    background: white;
+    height: 100%;
+    width: calc(100% / 3);
+}
+
+.italy--red {
+    background: red;
+    height: 100%;
+    width: calc(100% / 3);
+}
+/* ---------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------- */
+/* Ukraine */
+.flag--ukraine {
+ display: flex;
+ flex-direction: column;
+}
+
+.ukraine--blue {
+    background: blue;
+    width: 100%;
+    height: calc(100% / 2);
+}
+
+.ukraine--yellow {
+    background: yellow;
+    width: 100%;
+    height: calc(100% / 2);
+}
+/* ---------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------- */
+/* Kuwait */
+/* ---------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------------- */
+/* Banglasdesh */
+    .flag--bangladesh {
+        background:  #1a4f07;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bangladesh--circle {
+        background: red;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+
+/* ---------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------- */
+/* Japan */
+.flag--japan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.japan--boll {
+    background: red;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+/* ---------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------- */
+/* Greece */
+.flag--greece {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.greece--blue {
+    width: 100%;
+    height: calc(100% / 9);
+    background: blue;
+}
+
+.greece--white {
+    width: 100%;
+    height: calc(100% / 9);
+    background: white;
+}
+
+.greece--simbol {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background: blue;
+    width: calc(100% / 2);
+    height: calc(100% / 2);
+}
+
+.greece--vertical--line {
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    background: white;
+    left: calc(100% / 2);
+}
+
+.greece--horizontal--line {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background: white;
+}
+
+
+
+
+/* ---------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------------- */
+/* Portugal */
+.flag--portugal{
+display: flex;
+align-items: center;
+}
+
+.portugal--green {
+    background: green;
+    height: 100%;
+    width: 45%;
+}
+
+.portugal--red {
+    background: red;
+    height: 100%;
+    width: 55%;
+}
+
+.portugal--circle {
+    position: absolute;
+    left: calc(100% / 3.5);
+    background: yellow;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+
+/* ---------------------------------------------------------------------- */

@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Martian+Mono:wght@100..800&display=swap');
+
+* {
+  margin: 0;
+  color: white;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+p {
+  font-size: 10px;
+  line-height: 16px;
+
+}
+
+.card__wrapper {
+  background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(168,29,253,1) 50%, rgba(47,0,200,1) 100%);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card--container {
+  background: white;
+  max-width: 280px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px -1px 9px 6px rgba(58 4 112 / 26%);
+  position: relative;
+}
+ 
+.card--details {
+  background: linear-gradient(39deg, rgba(255, 0, 0, 1) 0%, rgb(255 191 0) 100%);
+  padding: 8px 8px 0;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+}
+
+
+.card--header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.brand--logo {
+  height: 12px
+}
+
+.card--price {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card--body {
+  padding-top: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card--text--bg {
+  padding: 50px 0;
+  text-transform: uppercase;
+  font-size: 180px;
+  letter-spacing: 10px;
+  line-height: 100px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  padding-left: 10px; 
+  opacity: .3;
+}
+
+.product--img {
+  position: absolute;
+  height: 300px;
+  top: 140px;
+  left: 10px;
+}
+
+.card--footer {
+padding: 8px;
+background: white;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 8px;
+border-radius: 8px;
+
+}
+
+.card--button {
+  margin-top: 8px;
+padding: 8px 30px; 
+border: 2px solid blue;
+border-radius: 25px;
+color: blue;
+font-size: 12px;
+text-transform: uppercase;
+background: transparent;
+z-index: 999;
+}
+
+.card--button:hover {
+  background: blue;
+  color: white;
+  transition: .2s;
+}
+
+.footer--info {
+  color: grey;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  opacity: .5;
+}
+
+
+
+
+
